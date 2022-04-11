@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	
+	<link rel="stylesheet" href="static/css/mycss.css">
+	<link rel="stylesheet" href="static/css/topnav.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<header>
+		<div class="wrapper">
+			<div id="logo"></div>
+		</div>
+	</header>
+	<div class="container">
+		<div class="wrapper">
+			<aside>
+				<div class="topna" id="myTopna">
+					<a>依內容搜尋：</a>
+					<div class="row">
+						<form action="">
+							<input name="search" type="text" placeholder="Mur Mur...">
+							<button type="submit"><i class="fa fa-search"></i></button>
+						</form>
+					</div>
+					<a>依日期搜尋：</a>
+					<div class="row">
+						<form action="">
+							<input type="date" id="written-day" name="written-day">
+							<button type="submit"><i class="fa fa-search"></i></button>
+						</form>
+					</div>
+  
+					<div class="row">
+
+					</div>
+					<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+					  <i class="fa fa-bars"></i>
+					</a>
+				</div>				
+			</aside>
+			<main>
+				<section class="menu">
+					
+				</section>
+				
+				<section>
+					<div class="post">
+						<h3 class="post-title">Title 1</h3>
+					</div>
+				</section>
+
+				<section></section>
+				<section></section>
+				<section></section>
+				<section></section>
+				<section></section>
+				<section></section>
+				<section></section>
+				<section></section>
+			</main>
+		</div>
+	</div>
+	<footer>
+		<p>I'm footer.</p>
+	</footer>
+	<script>
+		function myFunction() {
+		  var x = document.getElementById("myTopnav");
+		  if (x.className === "topnav") {
+			x.className += " responsive";
+		  } else {
+			x.className = "topnav";
+		  }
+		}
+	</script>
+		
+</body>
+</html>
