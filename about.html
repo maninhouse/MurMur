@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MurMur</title>
+	<link rel="shortcut icon" type="image/x-icon" href="static/images/turtle.ico" />
+
+	<meta name="description" content="關於我...好像也...沒什麼好說的..."/>
+	<meta name="keywords" content="無聊,MurMur,日記,廢文">
+	<meta name="author" content="ChouTzuChieh">
+	<meta property="og:site_name" content="MurMur::一起發廢文，拯救無聊的一天"/>
+	<!--
+		<meta property="og:url" content="文章連結"/>
+		<meta property="og:image" content="圖片連結"/>
+	-->
+	<meta property="og:type" content="website"/>
+	<meta property="og:title" content="關於 - MurMur::一起發廢文，拯救無聊的一天"/>
+	<meta property="og:description" content="MurMur的關於、關於網站、關於我，誰在乎呢..."/>
+	
+	<link rel="stylesheet" href="static/css/mycss.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="responsiveBody" id="responsiveBody">
+	<header>
+		<div class="wrapper">
+			<a href="javascript:void(0);" class="icon" onclick="collapseAside()">
+				<i class="fa fa-bars"></i>
+			</a>
+			<img id="logo" src="static/images/MurMurLogo.png" alt="MurMur"/>
+		</div>
+	</header>
+	<div class="container">
+		<div class="wrapper">
+			<aside class="asideMenu" id="asideMenu">
+				<a>依標籤搜尋：</a>
+				<div class="row">
+					<form action="">
+						<input name="search" type="text" placeholder="Mur Mur...">
+						<button type="submit"><i class="fa fa-search"></i></button>
+					</form>
+				</div>
+				<a>依日期搜尋：</a>
+				<div class="row">
+					<form action="">
+						<input type="date" id="written-day" name="written-day">
+						<button type="submit"><i class="fa fa-search"></i></button>
+					</form>
+				</div>			
+			</aside>
+			<!-- Main Content Start -->
+			<main>
+				<section class="menu">
+					<div class="row">
+						<a id="mainPage" href="/index.html">主頁</a>
+						<a id="aboutPage" href="/about.html">關於</a>
+					</div>
+				</section>
+				<hr>
+				<section>
+					<div class="post">
+						<div class="row">
+							<h3 class="post-title">我是誰?</h3>
+							·
+							<a class="post-date">2000/01/03</a>
+						</div>
+						<img src="static/images/img-about.png" alt="Meow"/>
+						<button id="btn-guess" onclick="guessWhat();">GUESS</button>
+					</div>
+				</section>
+			</main>
+			<!-- Main Content End -->
+		</div>
+	</div>
+	<footer>
+		<div class="info-left">
+			<img id="footer-logo" src="static/images/MurMurLogo.png" alt="MurMur"/>
+		</div>
+		<div class="info-right">
+			<a>四資管四</a><br>
+			<a>B10709031</a><br>
+			<a>Copyright &copy; 2020 Chou Tzu Chieh. <br> All rights reserved.</a>
+		</div>
+	</footer>
+
+	<button onclick="goTop()" id="btn-go-top" title="衝上去!!!">Top</button>
+
+	<script src="static/js/myjs.js"></script>		
+</body>
+</html>
